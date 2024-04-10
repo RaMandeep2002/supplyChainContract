@@ -191,14 +191,6 @@ contract SupplyChain is
         productCode = 1;
     }
 
-    // Define a function 'kill'
-    function kill() public {
-        if (_msgSender() == owner) {
-            address payable ownerAddressPayable = _make_payable(owner);
-            selfdestruct(ownerAddressPayable);
-        }
-    }
-
     // allows you to convert an address into a payable address
     function _make_payable(address x) internal pure returns (address payable) {
         return payable(address(uint160(x)));

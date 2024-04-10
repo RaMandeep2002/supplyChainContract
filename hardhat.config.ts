@@ -9,10 +9,10 @@ const config: HardhatUserConfig = {
   solidity: "0.8.24",
 
   networks: {
-    // sepolia: {
-    //   url: `https://eth-sepolia.g.alchemy.com/v2/${SEPOLIA_API_KEY}`,
-    //   accounts: [`0x${SEPOLIA_PRIVATE_KEY}`],
-    // },
+    sepolia: {
+      url: `https://eth-sepolia.g.alchemy.com/v2/${SEPOLIA_API_KEY}`,
+      accounts: [`0x${SEPOLIA_PRIVATE_KEY}`],
+    },
     mumbai: {
       url: `https://polygon-mumbai.g.alchemy.com/v2/${POLYGONSCAN_API_KEY}`,
       accounts: [`0x${POLYGONSCAN_PRIVATE_KEY}`],
