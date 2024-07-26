@@ -179,7 +179,7 @@ describe("*****Supply chain contract*****", async () => {
     await printdetail();
     console.log("SUCCESSFULLY Purchase Item By Retailer")
   })
-  it("********* 12. hipped Item By Distributor **********", async () => {
+  it("********* 12. shipped Item By Distributor **********", async () => {
     await new Promise(resolve => setTimeout(resolve, 3000));
     await supplychain.connect(signer[1]).produceItemByFarmer(123, "Ram", "this is my farm", "30.000", "30.000", "this is the product", ethers.parseEther("1"));
     await printdetail();
